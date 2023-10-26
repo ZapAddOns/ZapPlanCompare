@@ -1,7 +1,7 @@
-﻿# ZapPlanComparison
+﻿# ZapPlanCompare
 
 ## Description
-ZapPlanComparison is to compare two or more plans for the ZAP-X system
+ZapPlanCompare is a program to compare two or more plans for the Zap-X system.
 
 ## Installation
 Copy the application and belonging DLLs into an folder. Add the files zsClient.dll
