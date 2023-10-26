@@ -1,0 +1,33 @@
+﻿<Window x:Class="ZapPlanCompare.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZapPlanCompare"
+        mc:Ignorable="d"
+        Title="Login" 
+        WindowStartupLocation="CenterScreen" 
+        Style="{StaticResource CustomWindowStyle}"
+        ResizeMode="NoResize"
+        FontSize="16">
+    <StackPanel Margin="12,12,12,12">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="52"></RowDefinition>
+                <RowDefinition Height="52"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblUsername" Content="Username" Grid.Column="0" Grid.Row="0" Margin="0,0,20,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="lblPassword" Content="Password" Grid.Column="0" Grid.Row="1" Margin="0,0,20,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textUsername" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="28"/>
+            <PasswordBox x:Name="textPassword"  Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Stretch" Password="" VerticalAlignment="Center" Height="28"/>
+            <Button x:Name="btnLogin"  Grid.Column="1" Grid.Row="2" Content="Login" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Height="28" Margin="150,10,20,10"  Click="btnLogin_Click" IsDefault="True"/>
+            <Button x:Name="btnCancel"  Grid.Column="2" Grid.Row="2" Content="Cancel" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Height="28" Margin="0,10" Click="btnCancel_Click" IsCancel="True"/>
+        </Grid>
+    </StackPanel>
+</Window>
